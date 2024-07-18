@@ -1,25 +1,18 @@
-var customerName = 'bob';
-
+var customerName = 'bob'
+const leastFavoriteCustomer = 'some initial value'
 
 function upperCaseCustomerName() {
-    customerName = customerName.toUpperCase();
-  }
+  customerName = customerName.toUpperCase() 
+}
 
 function setBestCustomer() {
-    bestCustomer = 'not bob';
-  }
+  bestCustomer = 'not bob'
+}
 
+function overwriteBestCustomer() {
+  bestCustomer = 'maybe bob'
+}
 
-function overwriteBestCustomer(newBestCustomer) {
-    bestCustomer = newBestCustomer;}
-
-
-   
-const leastFavoriteCustomer = 'some initial value';
 function changeLeastFavoriteCustomer() {
-        try {
-          leastFavoriteCustomer = 'new value';
-        } catch (e) {
-          throw new Error('Assignment to constant variable.');
-        }
-      }   
+  leastFavoriteCustomer = 'billy'
+}
